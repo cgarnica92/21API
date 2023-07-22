@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Blackjack</title>
+</head>
+
+<body class="grid grid-rows-6 h-screen p-4">
+    <header class="row-span-1">
+        <h1 class="text-4xl font-bold text-center">BLACKJACK</h1>
+    </header>
+
+    <main class="grid row-span-5 gap-4 grid-cols-6">
+        <section class="grid grid-rows-6 col-span-1 border-black border-2 border-solid info-screens ">
+            <div class="grid row-span-4 content-center border-red-600 border-2 border-solid game-options">
+                <button class="bg-slate-400 rounded-md border-solid border-2 border-black p-1 mx-1 hover:underline rules-button">Rules</button>
+                <p class="hidden text-xl rules ">The aim of blackjack is to finish the game with a higher total than the dealer, without exceeding 21. Going over 21 is an automatic loss.</p>
+                <br>
+                <button class="bg-slate-400 rounded-md border-solid border-2 border-black p-1 mx-1 scores-button">High Scores</button>
+                <div class="hidden grid row-start-1 row-end-3 border-solid border-2 border-gray-200 high-scores">
+                    <h1 class="text-4x1">High Rollers Club</h1>
+                    <ol></ol>
+                </div>
+                <br>
+                <button class="hidden bg-slate-400 rounded-md border-solid border-2 border-black p-1 mx-1 options-return">Return</button>
+                <button class="hidden bg-slate-400 rounded-md border-solid border-2 border-black p-1 mx-1 nextround-button">Next Round</button>
+                <br>
+                <button class="hidden bg-slate-400 rounded-md border-solid border-2 border-black p-1 mx-1 quit-button">Quit Game</button>
+            </div>
+
+            <div class="grid row-span-2 content-center grid-rows-4 grid-cols-3 border-gray-200 border-2 border-solid currency-options">
+                <div class="grid col-2 row-start-1 USD"> </div>
+                <div class="grid row-start-2 col-start-1 EUR">EUR</div>
+                <div class="grid row-start-2 col-start-2 JPY">JPY</div>
+                <div class="grid row-start-2 col-start-3 GBP">GBP</div>
+                <div class="grid row-start-3 col-start-1 AUD">AUD</div>
+                <div class="grid row-start-3 col-start-2 CAD">CAD</div>
+                <div class="grid row-start-3 col-start-3 CHF">CHF</div>
+                <div class="grid row-start-4 col-start-1 NZD">NZD</div>
+                <div class="grid row-start-4 col-start-2 PLN">PLN</div>
+                <div class="grid row-start-4 col-start-3 UAH">UAH</div>
+            </div>
+        </section>
+
+        <section class="grid col-span-5 border-gray-200 border-2 border-solid grid-cols-12 grid-rows-4 game-screen">
+            <div class="text-xl font-bold grid row-start-1 col-start-1">DEALER</div>
+            <div class="text-xl font-bold grid row-start-3 col-start-1">PLAYER</div>
+            
+            <div class="grid row-start-2 col-start-6 col-span-2">
+                <button class="bg-red-600 rounded-md border-solid border-2 border-black p-1 mx-1 start-button">Test Your Might</button>
+            </div>
+            <div class="grid row-start-4 col-start-8">
+            <button class="grid hidden bg-red-600 rounded-md border-solid border-2 border-black p-1 mx-1 hit-button">HIT</button>
+            </div>
+            <div class="grid row-start-4 col-start-5">
+                <button class="grid hidden bg-red-600 rounded-md border-solid border-2 border-black p-1 mx-1 hold-button">HOLD 'EM</button>
+                </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+</body>
+</html>
